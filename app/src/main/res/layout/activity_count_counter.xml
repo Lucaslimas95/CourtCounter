@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".CountCounterActivity">
+
+
+                <TextView
+                    android:id="@+id/teamA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="37dp"
+                    android:text="Team A"
+                    tools:layout_editor_absoluteX="67dp"
+                    tools:layout_editor_absoluteY="65dp"
+                    android:layout_toStartOf="@+id/result" />
+
+        <TextView
+            android:id="@+id/pontuacaoA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pontuacaoB"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="124dp"
+            android:text="0"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+        <TextView
+            android:id="@+id/teamB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="52dp"
+            android:text="Team B"
+            tools:layout_editor_absoluteX="256dp"
+            tools:layout_editor_absoluteY="65dp" />
+
+        <TextView
+            android:id="@+id/pontuacaoB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="67dp"
+            android:text="0"
+            tools:layout_editor_absoluteX="256dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+
+    <Button
+        android:id="@+id/adcTresA"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/adcDoisA"
+        android:layout_alignTop="@+id/adcTresB"
+        android:onClick="addTeamA"
+        android:text="+ 3 POINTS"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <Button
+        android:id="@+id/adcDoisA"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/freeA"
+        android:layout_centerVertical="true"
+        android:onClick="addTeamA"
+        android:text="+ 2 POINTS"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <Button
+        android:id="@+id/freeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="164dp"
+        android:layout_toStartOf="@+id/freeB"
+        android:onClick="addTeamA"
+        android:text="FREE THROW"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+
+    <Button
+        android:id="@+id/adcTresB"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/adcDoisB"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="162dp"
+        android:onClick="addTeamB"
+        android:text="+ 3 POINTS"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <Button
+        android:id="@+id/adcDoisB"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/freeB"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="-1dp"
+        android:onClick="addTeamB"
+        android:text="+ 2 POINTS"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <Button
+        android:id="@+id/freeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="addTeamB"
+        android:text="FREE THROW"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+
+        <Button
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="99dp"
+            android:text="RESULT"
+            android:onClick="reusltado"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="363dp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp"
+            android:text="RESET"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="424dp" />
+
+            </RelativeLayout>
